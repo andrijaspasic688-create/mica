@@ -29,7 +29,7 @@ nav {
     margin-left: 20px;
 }
 
-/* HERO SEKCIJA - Proveri da je ovaj deo iskopiran */
+/* HERO SEKCIJA - Ovde se dodaje velika slika */
 .hero-section {
     height: 100vh;
     background: url('https://images.unsplash.com/photo-1599831032128-090956942621?q=80&w=1920') no-repeat center center/cover !important;
@@ -50,7 +50,7 @@ nav {
 }
 
 .hero-text { color: white; }
-.hero-text h1 { font-size: 3.5rem; }
+.hero-text h1 { font-size: 3.5rem; margin-bottom: 10px; }
 
 .hero-btn {
     background-color: #e67e22;
@@ -63,9 +63,19 @@ nav {
     font-weight: 600;
 }
 
-/* KARTICE */
+/* KARTICE GRADОВА */
 section { padding: 80px 8%; }
 .alt-bg { background-color: #f1f3f5; }
+
+h2 { text-align: center; margin-bottom: 40px; }
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #e67e22;
+    margin: 10px auto;
+}
 
 .grid {
     display: grid;
@@ -86,5 +96,7 @@ section { padding: 80px 8%; }
 .card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Ovo osigurava da slika uvek popuni prostor */
+    object-fit: cover;
 }
+
+.card h3 { margin-top: 15px; margin-bottom: 10px; }
